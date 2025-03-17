@@ -1,0 +1,67 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+}
+
+a:hover {
+  background-color: #ddd;
+}
+
+.horizontal-menu {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-container{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.location-info{
+  padding-right:30px;
+}
+
+.horizontal-menu {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Add space between the menu items */
+}
+
+.horizontal-menu li {
+  display: inline; /* Ensure list items are displayed inline */
+}
+
+.horizontal-menu a {
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Set your preferred text color */
+  padding: 10px 15px; /* Add padding for better click area */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.horizontal-menu a:hover {
+  background-color: #ddd; /* Change background color on hover */
+  color: #000; /* Change text color on hover if needed */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+

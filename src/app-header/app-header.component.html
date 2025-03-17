@@ -1,0 +1,32 @@
+<header class="header">
+  <div class="logo">
+    <h1 class="salon-title">D Zigler Salon/Barber Shop</h1>
+  </div>
+
+  <!-- Cart Icon Positioned at the Top Right -->
+  <div class="cart">
+    <a (click)="toggleCartPanel($event)">
+      🛒 (<span>{{ cartService.getCartItems().length }}</span>)
+    </a>
+    
+    <!-- Cart Panel -->
+    <div class="cart-panel" *ngIf="isCartPanelOpen">
+      <h3>Shopping Cart</h3>
+      <div class="cart-items" *ngIf="cartService.getCartItems().length > 0; else emptyCart">
+        <div class="cart-item" *ngFor="let item of cartService.getCartItems(); let i = index">
+          <span>{{ item.name }} - ${{ item.price }}</span>
+          <button class="remove-button" (click)="removeItem(i)">Remove</button>
+        </div>
+        <div class="cart-actions">
+          <button class="clear-button" (click)="clearCart()">Clear Cart</button>
+          <button class="order-button" disabled>Checkout</button>
+        </div>
+      </div>
+      <ng-template #emptyCart>
+        <div class="empty-cart">
+          Your cart is empty
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</header>
