@@ -42,7 +42,7 @@
         <div class="contact-input">
           <input type="text" 
                  [(ngModel)]="formData.contactInfo" 
-                 placeholder="Enter email or phone number"
+                 placeholder="Enter email"
                  [class.invalid]="formData.contactInfo && !isValidContact()">
           <p class="hint">Please enter a valid email or 10-digit phone number</p>
         </div>
