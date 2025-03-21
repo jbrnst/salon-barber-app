@@ -189,11 +189,11 @@
   font-size: 0.9rem;
   border-radius: 5px;
   color: #fff;
-  background-color: #607d8b;
+  background-color: #6b9b6b;
   border: none;
   transition: background-color 0.3s ease;
 }
 
 .product-card .btn:hover {
-  background-color: #546e7a;
+  background-color: #5a855a;
 }
