@@ -53,7 +53,7 @@ a:hover {
 
 /* Active (Selected) Tab - Stronger Gray */
 .horizontal-menu a.active-link {
-  background-color: #b0b0b0; /* Strong gray */
+  background-color: black; /* Strong gray */
   color: white;
   font-weight: bold;
 }
