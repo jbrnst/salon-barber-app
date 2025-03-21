@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-menu-component',
@@ -9,11 +9,11 @@ import { RouterModule } from '@angular/router';
   templateUrl: './menu-component.component.html',
   styleUrls: ['./menu-component.component.css']
 })
-export class MenuComponentComponent implements OnInit {
+export class MenuComponentComponent {
+  
+  constructor(private router: Router) {}
 
-  constructor() { }
-
-  ngOnInit() {
+  isActive(route: string): boolean {
+    return this.router.url === route;
   }
-
 }

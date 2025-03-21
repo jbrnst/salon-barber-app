@@ -1,8 +1,14 @@
 <div class="menu-container">
-<ul class="horizontal-menu">
-  <li><a routerLink="/services">Services</a></li>
-  <li><a routerLink="/products">Products</a></li>
-  <li><a routerLink="/contact">Contact</a></li>
-</ul>
-<span class="location-info">Austin, TX</span>
+  <ul class="horizontal-menu">
+    <li>
+      <a routerLink="/services" [ngClass]="{ 'active-link': isActive('/services') }">Services</a>
+    </li>
+    <li>
+      <a routerLink="/products" [ngClass]="{ 'active-link': isActive('/products') }">Products</a>
+    </li>
+    <li>
+      <a routerLink="/contact" [ngClass]="{ 'active-link': isActive('/contact') }">Contact</a>
+    </li>
+  </ul>
+  <span class="location-info">Austin, TX</span>
 </div>
