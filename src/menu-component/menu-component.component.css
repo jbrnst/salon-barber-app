@@ -51,13 +51,16 @@ a:hover {
   border-radius: 5px;
 }
 
-/* Hover effect */
-.horizontal-menu a:hover {
+/* Active (Selected) Tab - Stronger Gray */
+.horizontal-menu a.active-link {
+  background-color: #b0b0b0; /* Strong gray */
+  color: white;
+  font-weight: bold;
 }
 
-/* Active link styling */
-.horizontal-menu a.active-link {
-  background-color: #ddd;
+/* Hover - Lighter Gray */
+.horizontal-menu a:hover {
+  background-color: #e0e0e0; /* Light gray */
   color: #000;
   cursor: pointer;
 }
